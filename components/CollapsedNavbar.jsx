@@ -19,8 +19,8 @@ export const CollapsedNavbar = ({ onNavigate, onToggleShowReel }) => {
 
   const onDownload = () => {
     const link = document.createElement("a");
-    link.href = `/file/${PERSONAL_INFO.resumeFileName}`;
-    link.download = `${PERSONAL_INFO.firstName}-Resume.pdf`;
+    link.href = `/files/${PERSONAL_INFO.resumeFileName}`;
+    link.download = `${PERSONAL_INFO.resumeFileName}`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
